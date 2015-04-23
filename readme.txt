@@ -3,7 +3,7 @@ Contributors: Tayyab
 Tags: facebook,post,plugin,new page plugin,fancybox,social media,seo,facebook popup,popup
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: 3.0
+Stable tag: 1.0
 
 Turn website visitors into Facebook fans. With this plugin you can display a Facebook Fan Page-Like Box inside a lightbox  (overlay).
 
