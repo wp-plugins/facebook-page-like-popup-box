@@ -1,33 +1,41 @@
 === Facebook Page Like Popup Box ===
-Contributors: Tayyab 
-Tags: facebook,post,plugin,new page plugin,fancybox,social media,seo,facebook popup,popup
-Requires at least: 3.0
-Tested up to: 4.1
-Stable tag: 1.0
+Contributors: Tayyab
+Tags: facebook,post,plugin,new page plugin,fancybox,social media,seo,facebook popup,popup,Facebook, like box,  custom facebook likebox, Facebook, facebook badge, facebook button, facebook connect, facebook facepile, Facebook fan page, facebook integration, facebook like, facebook like box, facebook like box in PopUp, facebook like box shortcode, facebook like box shortcodes, facebook like box widget, facebook like button, Facebook like widget, facebook likebox, facebook likebox widget, facebook meta, facebook meta tag, Facebook Open Graph, Facebook Page, facebook platform, facebook plugin, facebook recommend, facebook share, facebook sidebar, facebook style, facebook wall, Facebook Widget, fb like box, friends, Like, like box, like box facebook, like box sidebox, like box widget, likebox, meta, nice facebook like box, open graph, page, plugin, post to facebook, rt facebook like box, social, Social Plugins, social profiles, social share, social sidebar, wordpress facebook like box, facebook social plugin,
 
-Turn website visitors into Facebook fans. With this plugin you can display a Facebook Fan Page-Like Box inside a lightbox  (overlay).
+Requires at least: 3.0
+Tested up to: 4.2
+Stable tag: 1.1.0
+
+With this plugin you can display a Facebook Page Like inside a lightbox popup.
 
 == Description ==
 
-Turn website visitors into Facebook fans. With this plugin you can display a Facebook Fan Page-Like Box.
-
-This way visitors will always stay up-to-date and you will receive more returning visitors.
+With this plugin you can display a Facebook Page Like inside a lightbox popup. This way visitors will always stay up-to-date and you will receive more returning visitors.
 
 **Features:**
 
-*   Facebook page is needed
-*   Display the Facebook Popup Box Page Plugin onload with or without a delay
-*   Promote your own facebook fanpage
+* Promote your own facebook fanpage
+* Developed according to Facebook Graph API 2.3
+* Display/Hide Fanpage cover photo
+* Ability to Share Fanpage
+* Two color schemes (Light and dark)
+* Display like box using shortcode.
+* Display like box using php function.
+* Display like box to homepage only.
+* Display like box on homepage or all pages.
+* Display like box on specific pages.
+* Display like box first time or forever. 
+* Allow user to display fan box to logged or non logged in or both.
 
 **Requirements:**
-
+*   Facebook page is needed
 * PHP 5 or higher
 * Facebook Fanpage or Group
 * Javascript enabled
 
 == Screenshots ==
 1. An example of a Facebook Popup Box Page Plugin.
-2. Configuring the plugin
+2. Configuring the plugin.
 
 == Installation ==
 
@@ -35,7 +43,14 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 Navigate to the "Settings" tab and set your preferences. You will need a facebook fanpage and retrieve it's ID. The plugin does not work with facebook groups or personal profiles.
 
+
 == Change Log ==
+
+= Version 1.1.0 =
+* Developed according to Facebook Graph API 2.3
+* Display/Hide Fanpage cover photo.
+* Ability to Share Fanpage.
+* Developed according to new facebook page plugin.
 
 = Version 1.0 =
 **Initial release**
