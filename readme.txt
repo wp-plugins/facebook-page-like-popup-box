@@ -13,16 +13,18 @@ With this plugin you can display a Facebook Page Like inside a lightbox popup. T
 
 = Features =
 * Promote your own facebook fanpage.
-* Developed according to Facebook Graph API 2.3
-* Display/Hide Fanpage cover photo
-* Ability to Share Fanpage
-* Two color schemes (Light and dark)
+* Ability to share fanpage.
+* Display like box first time or forever.
+* Display/Hide fanpage cover photo.
+* Display/Hide fanpage facebook posts.
 * Display like box using shortcode.
 * Display like box using php function.
 * Display like box to homepage only.
-* Display like box on homepage or all pages.
 * Display like box on specific pages.
-* Display like box first time or forever. 
+* Display like box on homepage or all pages.
+* Developed according to Facebook Graph API 2.3.
+
+ 
 * Allow user to display fan box to logged or non logged in or both.
 
 **Requirements:**
