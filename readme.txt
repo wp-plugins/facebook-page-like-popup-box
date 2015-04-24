@@ -6,7 +6,7 @@ Requires at least:3.8.5
 Tested up to: 4.2
 Stable tag: 1.1.0
 
-
+With this plugin you can display a Facebook Page Like inside a lightbox popup.
 == Description ==
 
 With this plugin you can display a Facebook Page Like inside a lightbox popup. This way visitors will always stay up-to-date and you will receive more returning visitors.
@@ -33,11 +33,10 @@ With this plugin you can display a Facebook Page Like inside a lightbox popup. T
 
 == Screenshots ==
 
-1. Settings
-2. like box
-3. likebox_darktheme
-4. likebox_with_show_post
-5. wp_like_box_using_shortcode
+1. Settings page screenshot.
+2. Popup like box screenshot.
+3. Likebox screenshot.
+
 
 == Installation ==
 
