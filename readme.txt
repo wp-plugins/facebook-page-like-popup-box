@@ -4,7 +4,7 @@ Tags: facebook,post,plugin,new page plugin,fancybox,social media,seo,facebook po
 
 Requires at least:3.8.5
 Tested up to: 4.2
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 
 With this plugin you can display a Facebook Page Like inside a lightbox popup.
 == Description ==
@@ -48,6 +48,9 @@ Navigate to the "Settings" tab and set your preferences. You will need a faceboo
 
 
 == Change Log ==
+
+= Version 1.1.1 =
+* Resolved some issues.
 
 = Version 1.1.0 =
 * Developed according to Facebook Graph API 2.3

@@ -4,7 +4,7 @@
   Description: Facebook Page Like Popup Box allows you to add Facebook like box to your wordpress blog.
   Author: Tayyab
    Author URI:https://www.google.com/+tayyabismail0o1 
-  Version: 1.1.0
+  Version: 1.1.1
   Copyright: 2015, Tayyab
  */
 require_once( ABSPATH . "wp-includes/pluggable.php" );
@@ -146,13 +146,12 @@ function wpfblbox_header() {
     $status = $myrows[0]->status;
     if ($status != 0) {
         ?>
-        <div id="fb-root"></div>
-        <div id="fb-root"></div>
+<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3&appId=130169883726238";
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=575748072558072";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
         <?php

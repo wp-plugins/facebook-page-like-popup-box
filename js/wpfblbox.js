@@ -79,26 +79,12 @@ function wpfblbox_switchonoff(val) {
 }
 
 
-
-window.fbAsyncInit = function () {
-    FB.init({
-        appId: '1577857539092932',
-        xfbml: true,
-        version: 'v2.1'
-    });
-};
-
-(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {
-        return;
-    }
-    js = d.createElement(s);
-    js.id = id;
-    var language = 'en_US';
-    if(language == '' || language == null){language = 'en_US';}
-    js.src = "//connect.facebook.net/"+language+"/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=575748072558072";
+  fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 function isNumeric(value) {
     var bool = isNaN(+value);
