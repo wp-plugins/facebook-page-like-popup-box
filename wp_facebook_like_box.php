@@ -3,7 +3,7 @@
   Plugin Name: Facebook Page Like Popup Box
   Description: Facebook Page Like Popup Box allows you to add Facebook like box to your wordpress blog.
   Author: Tayyab
-   Author URI:http://goo.gl/jCa0jI 
+   Author URI:https://www.google.com/+tayyabismail0o1 
   Version: 1.1.2
   Copyright: 2015, Tayyab
  */
