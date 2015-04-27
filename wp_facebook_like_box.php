@@ -3,8 +3,8 @@
   Plugin Name: Facebook Page Like Popup Box
   Description: Facebook Page Like Popup Box allows you to add Facebook like box to your wordpress blog.
   Author: Tayyab
-   Author URI:https://www.google.com/+tayyabismail0o1 
-  Version: 1.1.1
+   Author URI:http://goo.gl/jCa0jI 
+  Version: 1.1.2
   Copyright: 2015, Tayyab
  */
 require_once( ABSPATH . "wp-includes/pluggable.php" );
@@ -790,6 +790,78 @@ function wpfblbox_init() {
                             </div>
                         </div>
                         
+                        <div class="wpfblbox_col wpfblbox_col-adv" style="width:25%;">
+                            <div class="wpfblbox_where">
+                                <h2 style="text-align:left;">   
+                                    Please support us!
+                                </h2>
+                                <hr>
+                                <div>
+                                    <div style="font-family: Georgia,&quot;Times New Roman&quot;,serif;font-style:italic;font-size: 18px; margin-top: 10px;">
+                                        Follow us on Google+:
+                                    </div>
+                                    <div style="margin-top:10px; margin-bottom: 8px;">
+<div style="text-align:center;display:block;font-style:italic;font-family: Verdana,sans-serif;color: #FF0066;font-size: 18px;">
+                                        PoetryPlus:<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+</div>
+<div style="text-align:center;display:block;padding:5px;">
+<!-- Place this tag where you want the widget to render. -->
+<div class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/u/0/117540094619983926813" data-rel="author"></div>
+</div>
+<div style="text-align:center;display:block;font-style:italic;font-family: Verdana,sans-serif;color: #FF0066;font-size: 18px;">
+Tayyab Ismail:</div>
+<div style="text-align:center;display:block;padding:5px;">
+<div class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/u/0/116894274489883032583" data-rel="author"></div>
+                                    </div>
+                                </div>
+                                </div>
+                                <hr>
+                                <div>
+                  
+<div style="font-family: Georgia,&quot;Times New Roman&quot;,serif;font-style:italic;font-size: 18px; margin-top: 10px;">
+                                        Like us on Facebook:
+                                    </div>
+                                    <div style="margin-top:10px; margin-bottom: 8px;">
+                                        
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=575748072558072";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div style="text-align:center;display:block;font-size: 18px;font-style:italic;font-family: Verdana,sans-serif;color: #FF0066;">
+PoetryPlus:</div>
+<div style="text-align:center;display:block;padding:5px;">
+<div class="fb-like" data-href="https://www.facebook.com/ipics32" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></div>
+<div style="text-align:center;display:block;font-style:italic;font-family: Verdana,sans-serif;color: #FF0066;font-size: 18px;">
+Tayyab Ismail:</div>
+<div style="text-align:center;display:block;padding:5px;">
+<div class="fb-like" data-href="https://www.facebook.com/tayyab0o1" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                                    </div></div>
+                                    
+                                </div>
+                                <hr>
+                                <div>                  
+                        
+<div style="font-family: Georgia,&quot;Times New Roman&quot;,serif;font-style:italic;font-size: 18px; margin-top: 10px;">
+                                        Visit for support:
+                                    </div>
+                                    <div style="margin-top:10px; margin-bottom: 8px;">
+<div style="text-align: center;">
+                                        <a href="http://wordpress.org/support/plugin/facebook-page-like-popup-box" target="_blank" class="wpfblbox_btn wpfblbox_btn-success" style="width:90%; margin-top:5px; margin-bottom: 5px; ">Support!</a>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                <hr>
+                                <div>                  
+                                    
+                                </div>
+                            </div>
+                        </div>
                         <div class="wpfblbox_col wpfblbox_col-adv">
 
                         </div>
