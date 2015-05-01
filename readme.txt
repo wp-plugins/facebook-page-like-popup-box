@@ -49,8 +49,8 @@ Navigate to the "Settings" tab and set your preferences. You will need a faceboo
 
 
 = Version 1.2 =
-*Resolved some issues.
-*Removed not working options.
+* Resolved some issues.
+* Removed not working options.
 
 = Version 1.1.2 =
 * Added support.
