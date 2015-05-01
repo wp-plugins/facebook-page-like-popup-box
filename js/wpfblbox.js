@@ -60,7 +60,7 @@ function wpfblbox_switchonoff(val) {
             if (e == 'error') {
                 error('error');
             } else {
-                jQuery('#wpfblbox_circ').css("background", "#0f0");
+                jQuery('#wpfblbox_circ').css("background", "#00E600");
                 jQuery(val).attr("src", file2[0] + 'on.png');
             }
         });

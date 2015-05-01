@@ -3,8 +3,8 @@ Contributors: Tayyab
 Tags: facebook,post,plugin,new page plugin,fancybox,social media,seo,facebook popup,popup,Facebook, like box,  custom facebook likebox, Facebook, facebook badge, facebook button, facebook connect, facebook facepile, Facebook fan page, facebook integration, facebook like, facebook like box, facebook like box in PopUp, facebook like box shortcode, facebook like box shortcodes, facebook like box widget, facebook like button, Facebook like widget, facebook likebox, facebook likebox widget, facebook meta, facebook meta tag, Facebook Open Graph, Facebook Page, facebook platform, facebook plugin, facebook recommend, facebook share, facebook sidebar, facebook style, facebook wall, Facebook Widget, fb like box, friends, Like, like box, like box facebook, like box sidebox, like box widget, likebox, meta, nice facebook like box, open graph, page, plugin, post to facebook, rt facebook like box, social, Social Plugins, social profiles, social share, social sidebar, wordpress facebook like box, facebook social plugin,
 
 Requires at least:3.8.5
-Tested up to: 4.2
-Stable tag: 1.1.2
+Tested up to: 4.2.1
+Stable tag: 1.2
 
 With this plugin you can display a Facebook Page Like inside a lightbox popup.
 == Description ==
@@ -23,14 +23,12 @@ With this plugin you can display a Facebook Page Like inside a lightbox popup. T
 * Display like box on specific pages.
 * Display like box on homepage or all pages.
 * Developed according to Facebook Graph API 2.3.
-
- 
 * Allow user to display fan box to logged or non logged in or both.
 
 **Requirements:**
 * Facebook page is needed
 * PHP 5 or higher
-* Facebook Fanpage or Group
+* Jquery istalled
 * Javascript enabled
 
 == Screenshots ==
@@ -48,6 +46,11 @@ Navigate to the "Settings" tab and set your preferences. You will need a faceboo
 
 
 == Change Log ==
+
+
+= Version 1.2 =
+*Resolved some issues.
+*Removed not working options.
 
 = Version 1.1.2 =
 * Added support.

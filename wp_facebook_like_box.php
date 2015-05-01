@@ -4,7 +4,7 @@
   Description: Facebook Page Like Popup Box allows you to add Facebook like box to your wordpress blog.
   Author: Tayyab
    Author URI:https://www.google.com/+tayyabismail0o1 
-  Version: 1.1.2
+  Version: 1.2
   Copyright: 2015, Tayyab
  */
 require_once( ABSPATH . "wp-includes/pluggable.php" );
@@ -20,12 +20,12 @@ add_shortcode('wpfblikebox', 'wp_fb_like_box');
 function __construct() {
 	$widget_ops = array('classname' => 'my_widget_class', 'description' => __('Insert the plugin description here', 'wp_widget_plugin'));
 	$control_ops = array('width' => 400, 'height' => 300);
-	parent::WP_Widget(false, $name = __('Crudlab Facebook Like Box', 'wp_widget_plugin'), $widget_ops, $control_ops );
+	parent::WP_Widget(false, $name = __('Facebook Page Like Popup Box', 'wp_widget_plugin'), $widget_ops, $control_ops );
 }
 
     // constructor
     function wp_my_plugin() {
-        parent::WP_Widget(false, $name = __('Crudlab Facebook Like Box', 'wp_widget_plugin') );
+        parent::WP_Widget(false, $name = __('Facebook Page Like Popup Box', 'wp_widget_plugin') );
 
     }
 
@@ -46,7 +46,7 @@ function __construct() {
         ?>
 
         <p>
-            <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Crudlab Facebook Like box', 'wp_widget_plugin'); ?></label>
+            <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Facebook Page Like Popup Box', 'wp_widget_plugin'); ?></label>
         </p>
         <?php
     }
@@ -98,24 +98,24 @@ add_action('widgets_init', create_function('', 'return register_widget("wp_my_pl
 //--------------------------------------------------------
 
 // Add settings link on plugin page
-function crudlab_fb_like_box_settings_link($links) { 
+function fbpopup_fb_like_box_settings_link($links) { 
   $settings_link = '<a href="admin.php?page=wp_facebook-like-box&edit=1">Settings</a>'; 
   array_unshift($links, $settings_link); 
   return $links; 
 }
  
 $plugin = plugin_basename(__FILE__); 
-add_filter("plugin_action_links_$plugin", 'crudlab_fb_like_box_settings_link' );
+add_filter("plugin_action_links_$plugin", 'fbpopup_fb_like_box_settings_link' );
 
 
-function crudlab_wpfblikebox_abwb1()
+function fbpopup_wpfblikebox_abwb1()
 {
-        wp_register_style('css2', plugins_url('/jazz-popup/jazz-popup.css', __FILE__));
+        wp_register_style('css2', plugins_url('/css/fb-popup.css', __FILE__));
         wp_enqueue_style('css2');
         wp_enqueue_script('jquery-ui-core', array('jquery'));
-        wp_enqueue_script('pluginscript1', plugins_url('/jazz-popup/jquery.jazz-popup.js', __FILE__), array('jquery'));  
+        wp_enqueue_script('pluginscript1', plugins_url('/js/jq-fb-popup.js', __FILE__), array('jquery'));  
 }
-add_action('wp_enqueue_scripts', 'crudlab_wpfblikebox_abwb1');
+add_action('wp_enqueue_scripts', 'fbpopup_wpfblikebox_abwb1');
 
 function wpfblbox_uninstall_hook() {
     global $wpdb;
@@ -683,17 +683,7 @@ function wpfblbox_init() {
                                             </tr>
 
                                             <tr>
-                                                <td>
-                                                    <label style="padding-right:15px; float: right">Color Scheme</label>
-                                                </td>
-                                                <td>
-                                                    <div class="wpfblbox_form-group">
-                                                        <select class="wpfblbox_form-control" name="color" id="color" onchange="wpfblikebox_func();">
-                                                            <option <?php echo @$color['light']; ?> value="light">light</option>
-                                                            <option <?php echo @$color['dark']; ?> value="dark">dark</option>
-                                                        </select>
-                                                    </div>
-                                                </td>
+                                                
                                                 <td>&nbsp;</td>
                                             </tr>
                                             <tr>
@@ -798,56 +788,35 @@ function wpfblbox_init() {
                                 <hr>
                                 <div>
                                     <div style="font-family: Georgia,&quot;Times New Roman&quot;,serif;font-style:italic;font-size: 18px; margin-top: 10px;">
-                                        Follow us on Google+:
+                                        Please make a donation:
                                     </div>
-                                    <div style="margin-top:10px; margin-bottom: 8px;">
+                                    <div style="margin-top:0px; margin-bottom: 8px;">
 <div style="text-align:center;display:block;font-style:italic;font-family: Verdana,sans-serif;color: #FF0066;font-size: 18px;">
-                                        PoetryPlus:<!-- Place this tag in your head or just before your close body tag. -->
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+<div style="text-align:center;display:block;font-size: 11px;font-style:italic;font-family: Verdana,sans-serif;color: #FF0066;">
+Your donation will help us in providing other useful plugins and <strong>support</strong>.</div>  
+  <div style="margin-top:5px;">   
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHJwYJKoZIhvcNAQcEoIIHGDCCBxQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYBdhMiUQiHIZ5Jrci4MYC3g3UmyrghbZhktvGatnfxUYG5kwOtCcK+hHrpNvzaVTRCEzC+3Fm+lbGsHQ6GLciJRFptFN6JR6myMzLpx4o120UQPyGK2D9N1OtN2Fhb76UIZGfC48OfMdAL3PiYcmLBnh7rTbyv5oYp3IauoVMLNCjELMAkGBSsOAwIaBQAwgaQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIHYr6eQaQMsqAgYDqAviViskjrIpLyFPwCCwxERUUQJTQXcBxsat9wwpcAqo6v6VPGS2J3i+7fwXg7Z02WKPDUiDQihJ/l+5lWESpV4w1E6+5L4i8xWpBBdj11lYWqOWBJGaHHaWDuF5vZAY+2DpXT3zdWAxR4nZ82BhB16RRw08hKRn9j5hXmfmgOaCCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE1MDUwMTExMTgyM1owIwYJKoZIhvcNAQkEMRYEFCDI8mGFnTjXR64qhVAY9PvUulq+MA0GCSqGSIb3DQEBAQUABIGApk8mpCk3INHB+ipyiUC16ZTy1FoYaJH5KZPF2YnL4BQgHCIt/oE79ZG6qiOea917Y//4Z6OPU7IfPjm2yWs1kj6wiOtB/wDiTuT82FQWFNotUIIDihLpei2qRhmaCFDSlJ+ca8qefRyjBtxFt4taXrP56yPWzjUL5yIu4Xa8p2s=-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
 </div>
-<div style="text-align:center;display:block;padding:5px;">
-<!-- Place this tag where you want the widget to render. -->
-<div class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/u/0/117540094619983926813" data-rel="author"></div>
+
+
+                                 
 </div>
-<div style="text-align:center;display:block;font-style:italic;font-family: Verdana,sans-serif;color: #FF0066;font-size: 18px;">
-Tayyab Ismail:</div>
-<div style="text-align:center;display:block;padding:5px;">
-<div class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/u/0/116894274489883032583" data-rel="author"></div>
-                                    </div>
+
                                 </div>
                                 </div>
                                 <hr>
                                 <div>
                   
-<div style="font-family: Georgia,&quot;Times New Roman&quot;,serif;font-style:italic;font-size: 18px; margin-top: 10px;">
-                                        Like us on Facebook:
-                                    </div>
-                                    <div style="margin-top:10px; margin-bottom: 8px;">
-                                        
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=575748072558072";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<div style="text-align:center;display:block;font-size: 18px;font-style:italic;font-family: Verdana,sans-serif;color: #FF0066;">
-PoetryPlus:</div>
-<div style="text-align:center;display:block;padding:5px;">
-<div class="fb-like" data-href="https://www.facebook.com/ipics32" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></div>
-<div style="text-align:center;display:block;font-style:italic;font-family: Verdana,sans-serif;color: #FF0066;font-size: 18px;">
-Tayyab Ismail:</div>
-<div style="text-align:center;display:block;padding:5px;">
-<div class="fb-like" data-href="https://www.facebook.com/tayyab0o1" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-                                    </div></div>
-                                    
-                                </div>
-                                <hr>
-                                <div>                  
+              
                         
 <div style="font-family: Georgia,&quot;Times New Roman&quot;,serif;font-style:italic;font-size: 18px; margin-top: 10px;">
-                                        Visit for support:
+                                        Visit support for any issues:
                                     </div>
                                     <div style="margin-top:10px; margin-bottom: 8px;">
 <div style="text-align: center;">
@@ -878,12 +847,12 @@ Tayyab Ismail:</div>
 }
 
 //-------------------------------------- database --------------------
-global $crudlab_wpfblbox_db_version;
-$crudlab_wpfblbox_db_version = '1.1';
+global $fbpopup_wpfblbox_db_version;
+$fbpopup_wpfblbox_db_version = '1.1';
 
 function wpfblbox_install() {
     global $wpdb;
-    global $crudlab_wpfblbox_db_version;
+    global $fbpopup_wpfblbox_db_version;
 
     $table_name = $wpdb->prefix . 'wpfblbox';
 
@@ -922,12 +891,12 @@ function wpfblbox_install() {
     require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
     dbDelta($sql);
 
-    add_option('crudlab_wpfblbox_db_version', $crudlab_wpfblbox_db_version);
+    add_option('fbpopup_wpfblbox_db_version', $fbpopup_wpfblbox_db_version);
 }
 
 function wpfblikebox_myplugin_update_db_check() {
-    global $crudlab_wpfblbox_db_version;
-    if (get_site_option('crudlab_wpfblbox_db_version') != $crudlab_wpfblbox_db_version) {
+    global $fbpopup_wpfblbox_db_version;
+    if (get_site_option('fbpopup_wpfblbox_db_version') != $fbpopup_wpfblbox_db_version) {
         wpfblbox_install_data();
     }
 }
