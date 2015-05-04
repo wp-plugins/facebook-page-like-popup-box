@@ -436,13 +436,20 @@ margin-top: 7px;
 
 
 }
+@media screen and (max-width: 822px){
 
+.wpfblbox  .wpfblbox_col{
+        width: 95% !important;
+    }
+}
 
 @media screen and (max-width: 800px){
    .wpfblbox  .colmain{
-        width: 100%;
+         width: 100% !important;
     }
-
+.wpfblbox  .wpfblbox_col{
+        width: 95% !important;
+    }
 }
 
 @media screen and (max-width: 600px){
