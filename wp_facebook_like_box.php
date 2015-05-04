@@ -4,7 +4,7 @@
   Description: Facebook Page Like Popup Box allows you to add Facebook like box to your wordpress blog.
   Author: Tayyab
    Author URI:https://www.google.com/+tayyabismail0o1 
-  Version: 1.2
+  Version: 1.2.1
   Copyright: 2015, Tayyab
  */
 require_once( ABSPATH . "wp-includes/pluggable.php" );
@@ -785,6 +785,34 @@ function wpfblbox_init() {
                                 <h2 style="text-align:left;">   
                                     Please support us!
                                 </h2>
+                                <hr>
+                                <div>
+                  
+              
+                        
+<div style="font-family: Georgia,&quot;Times New Roman&quot;,serif;font-style:italic;font-size: 18px; margin-top: 10px;">
+                                        Our Plugins:
+                                    </div>
+                                    <div style="margin-top:10px; margin-bottom: 8px;">
+ <a href="http://wordpress.org/plugin/facebook-page-like-popup-box/" target="_blank" style="width:90%; margin-top:5px; margin-bottom: 5px; "><strong>Facebook Page Like Popup Box</strong></a>
+ Allows you to add facebook page like in popup box easily.
+<div style="text-align: center;">
+                                        <a href="http://wordpress.org/plugin/facebook-page-like-popup-box/" target="_blank" class="wpfblbox_btn wpfblbox_btn-success" style="width:90%; margin-top:5px; margin-bottom: 5px; ">Download</a>
+                                    </div>
+                                    </div>
+                                    
+                                    <div style="margin-top:10px; margin-bottom: 8px;">
+ <a href="https://wordpress.org/plugins/new-facebook-comments/" target="_blank" style="width:90%; margin-top:5px; margin-bottom: 5px; "><strong>Facebook Comments</strong></a>
+ Allows you to add facebook comments system in your website easily.
+<div style="text-align: center;">
+                                        <a href="https://wordpress.org/plugins/new-facebook-comments/" target="_blank" class="wpfblbox_btn wpfblbox_btn-success" style="width:90%; margin-top:5px; margin-bottom: 5px; ">Download</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                
+                                
+                                
                                 <hr>
                                 <div>
                                     <div style="font-family: Georgia,&quot;Times New Roman&quot;,serif;font-style:italic;font-size: 18px; margin-top: 10px;">

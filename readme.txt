@@ -1,15 +1,15 @@
 === Facebook Page Like Popup Box ===
-Contributors: itayyab0o1
-Tags: facebook,post,plugin,new page plugin,fancybox,social media,seo,facebook popup,popup,Facebook, like box,  custom facebook likebox, Facebook, facebook badge, facebook button, facebook connect, facebook facepile, Facebook fan page, facebook integration, facebook like, facebook like box, facebook like box in PopUp, facebook like box shortcode, facebook like box shortcodes, facebook like box widget, facebook like button, Facebook like widget, facebook likebox, facebook likebox widget, facebook meta, facebook meta tag, Facebook Open Graph, Facebook Page, facebook platform, facebook plugin, facebook recommend, facebook share, facebook sidebar, facebook style, facebook wall, Facebook Widget, fb like box, friends, Like, like box, like box facebook, like box sidebox, like box widget, likebox, meta, nice facebook like box, open graph, page, plugin, post to facebook, rt facebook like box, social, Social Plugins, social profiles, social share, social sidebar, wordpress facebook like box, facebook social plugin,
+Contributors: Tayyab
+Tags: facebook,post,plugin,new page plugin,fancybox,Facebook Graph API 2.3, social media,seo,facebook popup,popup,Facebook, like box,  custom facebook likebox, Facebook, facebook badge, facebook button, facebook connect, facebook facepile, Facebook fan page, facebook integration, facebook like, facebook like box, facebook like box in PopUp, facebook like box shortcode, facebook like box shortcodes, facebook like box widget, facebook like button, Facebook like widget, facebook likebox, facebook likebox widget, facebook meta, facebook meta tag, Facebook Open Graph, Facebook Page, facebook platform, facebook plugin, facebook recommend, facebook share, facebook sidebar, facebook style, facebook wall, Facebook Widget, fb like box, friends, Like, like box, like box facebook, like box sidebox, like box widget, likebox, meta, nice facebook like box, open graph, page, plugin, post to facebook, rt facebook like box, social, Social Plugins, social profiles, social share, social sidebar, wordpress facebook like box, facebook social plugin,
 
 Requires at least:3.8.5
 Tested up to: 4.2.1
-Stable tag: 1.2
+Stable tag: 1.2.1
 
-With this plugin you can display a Facebook Page Like inside a lightbox popup.
+Facebook Page Like Popup Box adds a "Facebook Page Like Popup Box" using new Facebook Graph API 2.3.
 == Description ==
 
-With this plugin you can display a Facebook Page Like inside a lightbox popup. This way visitors will always stay up-to-date and you will receive more returning visitors.
+With this plugin you can display a Facebook Page Like inside a lightbox popup. This way visitors will always stay up-to-date and you will receive more returning visitors. It is built using new Facebook Graph API 2.3.
 
 = Features =
 * Promote your own facebook fanpage.
@@ -47,10 +47,14 @@ Navigate to the "Settings" tab and set your preferences. You will need a faceboo
 
 == Change Log ==
 
+= Version 1.2.1 =
+*Resolved other minor issues.
+*Resolved issues in settings page responsive style.
+
 
 = Version 1.2 =
-* Resolved some issues.
-* Removed not working options.
+*Resolved some issues.
+*Removed not working options.
 
 = Version 1.1.2 =
 * Added support.
