@@ -160,8 +160,8 @@ function wpfblbox_header() {
 
 add_action('init', function() {
     // yes, this is a PHP 5.3 closure, deal with it
-    if (!isset($_COOKIE['crud_fblbox_my_cookie'])) {
-        setcookie('crud_fblbox_my_cookie', 'some default value', strtotime('+1 day'));
+    if (!isset($_COOKIE['fbpopup_my_cookie'])) {
+        setcookie('fbpopup_my_cookie', 'some default value', strtotime('+1 day'));
     }
 });
 
@@ -217,7 +217,7 @@ function wp_fb_like_box($content = NULL) {
     if (($mobile == 1 && wp_is_mobile()) || $mobile == 0) {
         if ($when_display == 0) {
 
-            if (!isset($_COOKIE['crud_fblbox_my_cookie'])) {
+            if (!isset($_COOKIE['fbpopup_my_cookie'])) {
                 if ($content != NULL) {
                     $fb .= '<script>jQuery(document).ready(function () {if(true){jQuery.jazzPopup.open({ items: { src: "#test-popup", crox: "'.plugins_url("/images/crox.png", __FILE__).'" }, type: "", removalDelay: 500,closeOnBgClick: false, closeMarkup: "<img class=\'mfp-close\' src=\'' . plugins_url("/images/close.png", __FILE__) . '\'>", callbacks: {beforeOpen: function() {this.st.image.markup = this.st.image.markup.replace("mfp-figure", "mfp-figure mfp-with-anim");this.st.mainClass = "fade" ;}}  });}})</script>';
                     $fb .= '<style>.wpfblikebox .fb_iframe_widget span{width:' . $width . 'px !important;}</style>';
