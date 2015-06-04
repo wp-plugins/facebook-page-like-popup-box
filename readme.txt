@@ -46,6 +46,9 @@ Navigate to the "Settings" tab and set your preferences. You will need a faceboo
 
 
 == Change Log ==
+= Version 1.3 =
+* Removed some bugs and issues.
+
 
 = Version 1.2.1 =
 * Resolved other minor issues.
