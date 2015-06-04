@@ -4,7 +4,7 @@
   Description: Facebook Page Like Popup Box allows you to add Facebook like box to your wordpress blog.
   Author: Tayyab
    Author URI:https://www.google.com/+tayyabismail0o1 
-  Version: 1.2.1
+  Version: 1.3
   Copyright: 2015, Tayyab
  */
 require_once( ABSPATH . "wp-includes/pluggable.php" );
@@ -151,7 +151,7 @@ function wpfblbox_header() {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=575748072558072";
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
         <?php
@@ -302,27 +302,27 @@ if (isset($_REQUEST['update_wpfblikebox'])) {
     $display = $_REQUEST['display'];
     $display_val = 0;
     foreach ($display as $d) {
-        $display_val += @mysql_real_escape_string($d);
+       $display_val += @sanitize_text_field($d);
     }
     $except_ids = (isset($_REQUEST['except_ids'])) ? $_REQUEST['except_ids'] : '';
     if ($except_ids != NULL) {
         $except_ids = implode(', ', $except_ids);
     }
-    $color = @mysql_real_escape_string($_REQUEST['color']);
-    $height = @mysql_real_escape_string($_REQUEST['height']);
-    $width = @mysql_real_escape_string($_REQUEST['width']);
-    $mobile = @mysql_real_escape_string($_REQUEST['mobile']);
-    $delay = @mysql_real_escape_string($_REQUEST['delay']);
-    $when_display = @mysql_real_escape_string($_REQUEST['when_display']);
-    $fbpage = @mysql_real_escape_string($_REQUEST['fbpage']);
-    $mobile = @mysql_real_escape_string($_REQUEST['mobile']);
-    $edit_id = @mysql_real_escape_string($_REQUEST['edit']);
-    $faces = @mysql_real_escape_string($_REQUEST['faces']);
-    $header = @mysql_real_escape_string($_REQUEST['header']);
-    $border = @mysql_real_escape_string($_REQUEST['border']);
-    $posts = @mysql_real_escape_string($_REQUEST['posts']);
-    $users = @mysql_real_escape_string($_REQUEST['users']);
-    $cover_photo = @mysql_real_escape_string($_REQUEST['cover_photo']);
+   $color = @sanitize_text_field($_REQUEST['color']);
+    $height = @sanitize_text_field($_REQUEST['height']);
+    $width = @sanitize_text_field($_REQUEST['width']);
+    $mobile = @sanitize_text_field($_REQUEST['mobile']);
+    $delay = @sanitize_text_field($_REQUEST['delay']);
+    $when_display = @sanitize_text_field($_REQUEST['when_display']);
+    $fbpage = @sanitize_text_field($_REQUEST['fbpage']);
+    $mobile = @sanitize_text_field($_REQUEST['mobile']);
+    $edit_id = @sanitize_text_field($_REQUEST['edit']);
+    $faces = @sanitize_text_field($_REQUEST['faces']);
+    $header = @sanitize_text_field($_REQUEST['header']);
+    $border = @sanitize_text_field($_REQUEST['border']);
+    $posts = @sanitize_text_field($_REQUEST['posts']);
+    $users = @sanitize_text_field($_REQUEST['users']);
+    $cover_photo = @sanitize_text_field($_REQUEST['cover_photo']);
 
     ($edit_id == 0 || $edit_id == '') ? $edit_id = 1 : '';
     $ul = '0';
@@ -959,7 +959,7 @@ function wpfblbox_install_data() {
             'width' => 340,
             'height' => 500,
             'except_ids' => '',
-            'fbpage' => 'https://www.facebook.com/wordpress',
+            'fbpage' => 'https://www.facebook.com/ipics32',
             'when_display' => 1,
             'users' => 2,
             'delay' => 0,

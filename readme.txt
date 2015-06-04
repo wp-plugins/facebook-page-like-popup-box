@@ -4,7 +4,7 @@ Tags: facebook,post,plugin,new page plugin,fancybox,Facebook Graph API 2.3, soci
 
 Requires at least:3.8.5
 Tested up to: 4.2.1
-Stable tag: 1.2.1
+Stable tag: 1.3
 
 Facebook Page Like Popup Box adds a "Facebook Page Like Popup Box" using new Facebook Graph API 2.3.
 == Description ==

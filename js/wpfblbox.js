@@ -83,7 +83,7 @@ function wpfblbox_switchonoff(val) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=575748072558072";
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 function isNumeric(value) {
@@ -125,7 +125,7 @@ function wpfblikebox_func() {
     var url = jQuery('#url_text').val();
     console.log(url);
     if(url == '' || url == null){
-        url = 'https://www.facebook.com/FacebookDevelopers';
+        url = 'https://www.facebook.com/ipics32';
     }
     
     var token = url.indexOf('http://');
